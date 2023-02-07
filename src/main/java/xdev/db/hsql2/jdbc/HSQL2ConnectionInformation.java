@@ -18,29 +18,8 @@
 
 package xdev.db.hsql2.jdbc;
 
-/*-
- * #%L
- * HSQL2
- * %%
- * Copyright (C) 2003 - 2023 XDEV Software
- * %%
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Lesser Public License for more details.
- * 
- * You should have received a copy of the GNU General Lesser Public
- * License along with this program.  If not, see
- * <http://www.gnu.org/licenses/lgpl-3.0.html>.
- * #L%
- */
-
 import com.xdev.jadoth.sqlengine.dbms.DbmsConnectionInformation;
+
 import xdev.db.ConnectionInformation;
 
 
@@ -53,31 +32,27 @@ public class HSQL2ConnectionInformation extends ConnectionInformation<HSQL2Dbms>
 	/**
 	 * Instantiates a new hsql20 connection information.
 	 *
-	 * @param user
-	 *            the user
-	 * @param password
-	 *            the password
-	 * @param database
-	 *            the database
-	 * @param urlExtension
-	 *            the extended url properties
-	 * @param dbmsAdaptor
-	 *            the dbms adaptor
+	 * @param user         the user
+	 * @param password     the password
+	 * @param database     the database
+	 * @param urlExtension the extended url properties
+	 * @param dbmsAdaptor  the dbms adaptor
 	 */
-	public HSQL2ConnectionInformation(final String host, final int port, final String user,
-			final String password, final String database, final String urlExtension,
-			final HSQL2Dbms dbmsAdaptor)
+	public HSQL2ConnectionInformation(
+		final String host, final int port, final String user,
+		final String password, final String database, final String urlExtension,
+		final HSQL2Dbms dbmsAdaptor)
 	{
-		super(host,port,user,password,database,urlExtension,dbmsAdaptor);
+		super(host, port, user, password, database, urlExtension, dbmsAdaptor);
 	}
-	
 	
 	// /////////////////////////////////////////////////////////////////////////
 	// getters //
 	// ///////////////////
+	
 	/**
 	 * Gets the database.
-	 * 
+	 *
 	 * @return the database
 	 */
 	public String getDatabase()
@@ -85,25 +60,24 @@ public class HSQL2ConnectionInformation extends ConnectionInformation<HSQL2Dbms>
 		return this.getCatalog();
 	}
 	
-	
 	// /////////////////////////////////////////////////////////////////////////
 	// setters //
 	// ///////////////////
+	
 	/**
 	 * Sets the database.
-	 * 
-	 * @param database
-	 *            the database to set
+	 *
+	 * @param database the database to set
 	 */
 	public void setDatabase(final String database)
 	{
 		this.setCatalog(database);
 	}
 	
-	
 	// /////////////////////////////////////////////////////////////////////////
 	// override methods //
 	// ///////////////////
+	
 	/**
 	 * @see DbmsConnectionInformation#createJdbcConnectionUrl()
 	 */
@@ -114,7 +88,6 @@ public class HSQL2ConnectionInformation extends ConnectionInformation<HSQL2Dbms>
 		return appendUrlExtension(url);
 	}
 	
-	
 	/**
 	 * @see com.xdev.jadoth.sqlengine.dbms.DbmsConnectionInformation#getJdbcDriverClassName()
 	 */
@@ -123,5 +96,4 @@ public class HSQL2ConnectionInformation extends ConnectionInformation<HSQL2Dbms>
 	{
 		return "org.hsqldb.jdbc.JDBCDriver";
 	}
-	
 }
