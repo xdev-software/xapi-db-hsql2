@@ -1,9 +1,9 @@
 [![Latest version](https://img.shields.io/maven-central/v/com.xdev-software/xapi-db-hsqldb2)](https://mvnrepository.com/artifact/com.xdev-software/xapi-db-hsqldb2)
 [![Build](https://img.shields.io/github/actions/workflow/status/xdev-software/xapi-db-hsqldb2/checkBuild.yml?branch=develop)](https://github.com/xdev-software/xapi-db-hsqldb2/actions/workflows/checkBuild.yml?query=branch%3Adevelop)
 [![javadoc](https://javadoc.io/badge2/com.xdev-software/xapi-db-hsqldb2/javadoc.svg)](https://javadoc.io/doc/com.xdev-software/xapi-db-hsqldb2) 
-# SqlEngine Database Adapter HSQLDB2
+# SqlEngine Database Adapter HyperSQL 2
 
-The XDEV Application Framework provides an abstraction over database dialects as part of its SqlEngine. This module is the Database Adapter for HSQLDB2 which includes the HSQLDB2-specific implementation for database access.
+The XDEV Application Framework provides an abstraction over database dialects as part of its SqlEngine. This module is the Database Adapter for HyperSQL 2 which includes the HyperSQL 2-specific implementation for database access.
 
 ## XDEV-IDE
 The [XDEV(-IDE)](https://xdev.software/en/products/swing-builder) is a visual Java development environment for fast and easy application development (RAD - Rapid Application Development). XDEV differs from other Java IDEs such as Eclipse or NetBeans, focusing on programming through a far-reaching RAD concept. The IDE's main components are a Swing GUI builder, the XDEV Application Framework and numerous drag-and-drop tools and wizards with which the functions of the framework can be integrated.
