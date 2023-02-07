@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -10,13 +10,13 @@
     <packaging>jar</packaging>
 
     <name>SqlEngine Database Adapter HSQL2</name>
-	<description>XAPI SqlEngine Database Adapter for HSQL2</description>
-	<url>https://github.com/xdev-software/xapi-db-hsql2</url>
+    <description>XAPI SqlEngine Database Adapter for HSQL2</description>
+    <url>https://github.com/xdev-software/xapi-db-hsql2</url>
 
     <scm>
-		<url>https://github.com/xdev-software/xapi-db-hsql2</url>
-		<connection>https://github.com/xdev-software/xapi-db-hsql2.git</connection>
-	</scm>
+        <url>https://github.com/xdev-software/xapi-db-hsql2</url>
+        <connection>https://github.com/xdev-software/xapi-db-hsql2.git</connection>
+    </scm>
 
     <inceptionYear>2003</inceptionYear>
 
@@ -48,7 +48,7 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        
+
         <xdev.xapi.version>6.0.1</xdev.xapi.version>
     </properties>
 
@@ -100,6 +100,8 @@
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
             <version>2.7.1</version>
+            <!-- For compatibility with JDK 8. See https://hsqldb.org/doc/2.0/changelist_2_0.txt and https://stackoverflow.com/a/74261846/2351407 -->
+            <classifier>jdk8</classifier>
         </dependency>
     </dependencies>
 
