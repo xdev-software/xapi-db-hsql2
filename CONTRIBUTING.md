@@ -33,14 +33,15 @@ You should have the following things installed:
 ### Recommended setup
 
 * Install ``IntelliJ`` (Community Edition is sufficient)
-  * Install the following plugins:
-    * [Save Actions](https://plugins.jetbrains.com/plugin/7642-save-actions) - Provides save actions, like running the
-      formatter or adding ``final`` to fields
-    * [SonarLint](https://plugins.jetbrains.com/plugin/7973-sonarlint) - CodeStyle/CodeAnalysis
-    * [Checkstyle-IDEA](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea) - CodeStyle/CodeAnalysis
-  * Import the project
-  * Ensure that everything is encoded in ``UTF-8``
-  * Ensure that the JDK/Java-Version is correct
+    * Install the following plugins:
+        * [Save Actions](https://plugins.jetbrains.com/plugin/7642-save-actions) - Provides save actions, like running
+          the
+          formatter or adding ``final`` to fields
+        * [SonarLint](https://plugins.jetbrains.com/plugin/7973-sonarlint) - CodeStyle/CodeAnalysis
+        * [Checkstyle-IDEA](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea) - CodeStyle/CodeAnalysis
+    * Import the project
+    * Ensure that everything is encoded in ``UTF-8``
+    * Ensure that the JDK/Java-Version is correct
 
 ## Releasing [![Build](https://img.shields.io/github/actions/workflow/status/xdev-software/xapi-db-hsql2/release.yml?branch=master)](https://github.com/xdev-software/xapi-db-hsql2/actions/workflows/release.yml)
 
