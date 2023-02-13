@@ -2,4 +2,5 @@
 
 ## Reporting a Vulnerability
 
-Please report a security vulnerability [on GitHub Security Advisories](https://github.com/xdev-software/xapi-db-hsqldb2/security/advisories/new).
+Please report a security
+vulnerability [on GitHub Security Advisories](https://github.com/xdev-software/xapi-db-hsql2/security/advisories/new).
